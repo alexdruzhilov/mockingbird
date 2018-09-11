@@ -1,4 +1,9 @@
 install:
-	node install express
+	npm i
+	npm install -g forever
+
 start:
-	node server.js
+	forever start server.js
+
+stop:
+	forever stop server.js
